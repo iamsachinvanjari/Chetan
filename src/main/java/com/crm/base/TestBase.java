@@ -1,28 +1,22 @@
 package com.crm.base;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.interactions.Actions;
 
 public class TestBase {
 	public static WebDriver driver;
-	public static Properties prop;/*
+	public static Properties prop;
+	/*
 	public static ExtentTest test;
 	public static ExtentReports extent;*/
 	
 	public TestBase() {
 		prop = new Properties();
-		System.out.println("browserName");
 		String path ="C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\config\\config.properties";
 		prop = new Properties();
 		FileInputStream ip;
@@ -31,7 +25,6 @@ public class TestBase {
 			
 			prop.load(ip);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -39,8 +32,6 @@ public class TestBase {
 	
 public static void initilization()
 {
-	String browserName = prop.getProperty("browserName");
-	System.out.println(browserName);
 	/*
 	extent = new ExtentReports ("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\reports\\freeCRM_Reports.html", false);
 	extent.addSystemInfo("Platform","Windows8.1");
@@ -53,8 +44,8 @@ public static void initilization()
 	     driver= new FirefoxDriver();
 	     test.log(LogStatus.PASS, "Firefox launched successfully");
 	     } else */ //if(browserName=="Chrome") {
-		System.setProperty("webdriver.chrome.driver", "E:\\Selenium Material\\chromedriver_win32 (2)\\chromedriver.exe");
-		driver= new ChromeDriver();
+	System.setProperty("webdriver.chrome.driver", "E:\\Selenium Material\\chromedriver_win32 (2)\\chromedriver.exe");
+	driver= new ChromeDriver();
 	/*	test.log(LogStatus.PASS,"Google Chrome browser launched successfully");
 //	*///}
 	driver.get("https://www.freecrm.com/index.html");
