@@ -2,17 +2,22 @@ package com.crm.tests;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.crm.base.TestBase;
 import com.crm.pages.CompanyLookUpPage;
 import com.crm.pages.HomePage;
 import com.crm.pages.LoginPage;
 import com.crm.pages.NewContactsPage;
+import com.crm.reports.ExtentReportListener;
 import com.crm.util.TestUtil;
-
+@Listeners(value=ExtentReportListener.class)
 public class CompanyLookUpPageTest extends TestBase{
 
 		LoginPage loginPage;
@@ -43,10 +48,17 @@ public class CompanyLookUpPageTest extends TestBase{
 
 	@Test
 	public void validateSearch() {
+		/*ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
+		ExtentReports extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);*/
+
 		System.out.println("hii");
 		comp_look_up_page.putValueForSearch("abc");
+		WebElement element = comp_look_up_page.getSearch();
+	//	TestUtil.drawBorder(driver, element);
+		//TestUtil.takeScreenshot();
 		comp_look_up_page.clickOnSearch();
-		
+	//	TestUtil.takeScreenshot();
 		
 	}
 	@AfterMethod

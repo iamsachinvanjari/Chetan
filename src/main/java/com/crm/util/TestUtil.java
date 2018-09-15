@@ -1,5 +1,6 @@
 package com.crm.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,14 +9,21 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.crm.base.TestBase;
+import com.google.common.io.Files;
 
 public class TestUtil extends TestBase{
 
 	public static int implicit_Timeout = 20;
 	static Workbook book;
 	static Sheet sheet;
+	static int no;
 	public static String TESTDATA_SHEET_PATH = "C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\data\\newConatct.xlsx";
 	//For switching to frame
 	public  void movetoFrame()
@@ -49,5 +57,46 @@ public class TestUtil extends TestBase{
 		}
 		return data;
 	}
-	//next to come
+	//Taking screen shots
+	public static void takeScreenshot()
+	{
+		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 try {
+			Files.copy(screenshotFile, new File("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\Screen-Shots\\SoftwareTestingMaterial"+no+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	// Snaputil
+	public static File getsanp()
+	{
+		File tempSnap = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File FileDest = new File("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\Screen-Shots\\SoftwareTestingMaterial"+no+++".png");
+		
+		try {
+			Files.move(tempSnap, FileDest);
+			return FileDest;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Error occured while saving snap");
+			return null;
+		}
+		
+		
+		
+	}
+	//Drawing border
+	public static void drawBorder(WebDriver driver, WebElement element)
+	{
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].style.border='3px solid red'", element);
+	}
+	//Highlight the webElement
+	public static void highlightWebElemnet()
+	{
+		
+	}
+	
 }

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="false">
-  <test name="Test">
+<suite name="Automation of FreeCRM">
+
+<listeners>
+		<listener class-name="com.qa.reports.ExtentReportListener"/>
+		<listener class-name="com.crm.Analyzer.MyTransformer"/>
+</listeners>
+ <test name="Test">
     <classes>
-      <class name = "com.crm.tests.NewContactsPageTest">
-      <methods>
-      	<include name = "validateCompanyLookUp"/>
-      </methods>
-      </class>
+      <class name = "com.crm.tests.HomePageTest"></class>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

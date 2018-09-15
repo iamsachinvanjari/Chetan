@@ -11,6 +11,21 @@ public class CompanyLookUpPage extends TestBase{
 	@FindBy(xpath = "//*[@type='submit']")
 	WebElement search;
 
+	public WebElement getSearch() {
+		return search;
+	}
+
+	public void setSearch(WebElement search) {
+		this.search = search;
+	}
+
+	public WebElement getSearchBox() {
+		return searchBox;
+	}
+
+	public void setSearchBox(WebElement searchBox) {
+		this.searchBox = searchBox;
+	}
 	@FindBy(xpath = "//*[@id='search']")
 	WebElement searchBox;
 	

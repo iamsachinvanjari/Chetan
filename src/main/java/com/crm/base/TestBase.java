@@ -1,19 +1,18 @@
 package com.crm.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.crm.reports.ExtentReportListener;
 
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
-	/*
-	public static ExtentTest test;
-	public static ExtentReports extent;*/
 	
 	public TestBase() {
 		prop = new Properties();
@@ -28,7 +27,7 @@ public class TestBase {
 			e.printStackTrace();
 		}
 		
-		}
+	}
 	
 public static void initilization()
 {
@@ -44,6 +43,12 @@ public static void initilization()
 	     driver= new FirefoxDriver();
 	     test.log(LogStatus.PASS, "Firefox launched successfully");
 	     } else */ //if(browserName=="Chrome") {
+/*	ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
+	ExtentReports extent = new ExtentReports();
+	extent.attachReporter(htmlReporter);
+	
+	ExtentTest test = extent.createTest("MyFirstTest");
+*/	
 	System.setProperty("webdriver.chrome.driver", "E:\\Selenium Material\\chromedriver_win32 (2)\\chromedriver.exe");
 	driver= new ChromeDriver();
 	/*	test.log(LogStatus.PASS,"Google Chrome browser launched successfully");
@@ -52,5 +57,22 @@ public static void initilization()
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(com.crm.util.TestUtil.implicit_Timeout,TimeUnit.SECONDS);
 	driver.manage().deleteAllCookies();	
-	}
 }
+	protected void info(String message)
+	{
+		ExtentReportListener.test.get().info(message);
+				
+}
+	protected void info(String message, File snap)
+	{
+	 
+		try {
+			ExtentReportListener.test.get().info(message,MediaEntityBuilder.createScreenCaptureFromPath(snap.getAbsolutePath()).build());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+}
+}
+
