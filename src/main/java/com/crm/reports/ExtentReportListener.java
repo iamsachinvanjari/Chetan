@@ -6,10 +6,12 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.crm.util.TestUtil;
 
 public class ExtentReportListener implements ITestListener {
 
-	private static ExtentReports extent = ExtentManager.createInstance("Free_CRM_Test_Report_CRC.html");
+	private static int counter=0;
+	private static ExtentReports extent = ExtentManager.createInstance("Free_CRM_Test_Report_CRC"+counter+++".html");
 	
     public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	

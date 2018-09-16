@@ -1,109 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="230194" started-at="2018-09-15T08:14:22Z" finished-at="2018-09-15T08:18:12Z">
+  <suite name="Default suite" duration-ms="53372" started-at="2018-09-15T09:35:01Z" finished-at="2018-09-15T09:35:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="230194" started-at="2018-09-15T08:14:22Z" finished-at="2018-09-15T08:18:12Z">
-      <class name="com.crm.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="23446" started-at="2018-09-15T13:44:22Z" finished-at="2018-09-15T13:44:45Z">
+    <test name="Default test" duration-ms="53372" started-at="2018-09-15T09:35:01Z" finished-at="2018-09-15T09:35:54Z">
+      <class name="com.crm.tests.CompanyLookUpPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.tests.CompanyLookUpPageTest@18be83e4]" name="setup" is-config="true" duration-ms="49934" started-at="2018-09-15T15:05:01Z" finished-at="2018-09-15T15:05:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsLinkTest()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="verifyContactsLinkTest" duration-ms="2986" started-at="2018-09-15T13:44:45Z" finished-at="2018-09-15T13:44:48Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateSearch()[pri:0, instance:com.crm.tests.CompanyLookUpPageTest@18be83e4]" name="validateSearch" duration-ms="2359" started-at="2018-09-15T15:05:51Z" finished-at="2018-09-15T15:05:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyContactsLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1417" started-at="2018-09-15T13:44:48Z" finished-at="2018-09-15T13:44:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="27596" started-at="2018-09-15T13:44:50Z" finished-at="2018-09-15T13:45:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="verifyHomePageTitleTest" duration-ms="48" started-at="2018-09-15T13:45:17Z" finished-at="2018-09-15T13:45:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1011" started-at="2018-09-15T13:45:17Z" finished-at="2018-09-15T13:45:18Z">
+        </test-method> <!-- validateSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.CompanyLookUpPageTest@18be83e4]" name="tearDown" is-config="true" duration-ms="1011" started-at="2018-09-15T15:05:53Z" finished-at="2018-09-15T15:05:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="23872" started-at="2018-09-15T13:45:18Z" finished-at="2018-09-15T13:45:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateNewContactLinktest()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateNewContactLinktest" duration-ms="3656" started-at="2018-09-15T13:45:42Z" finished-at="2018-09-15T13:45:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNewContactLinktest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1086" started-at="2018-09-15T13:45:46Z" finished-at="2018-09-15T13:45:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="25288" started-at="2018-09-15T13:45:47Z" finished-at="2018-09-15T13:46:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateDeals()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateDeals" duration-ms="2945" started-at="2018-09-15T13:46:12Z" finished-at="2018-09-15T13:46:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDeals -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1098" started-at="2018-09-15T13:46:15Z" finished-at="2018-09-15T13:46:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="26517" started-at="2018-09-15T13:46:16Z" finished-at="2018-09-15T13:46:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateTasks()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateTasks" duration-ms="3490" started-at="2018-09-15T13:46:43Z" finished-at="2018-09-15T13:46:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTasks -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1316" started-at="2018-09-15T13:46:46Z" finished-at="2018-09-15T13:46:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="26658" started-at="2018-09-15T13:46:48Z" finished-at="2018-09-15T13:47:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateContactSubmenuOption()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateContactSubmenuOption" duration-ms="940" started-at="2018-09-15T13:47:14Z" finished-at="2018-09-15T13:47:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateContactSubmenuOption -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1364" started-at="2018-09-15T13:47:15Z" finished-at="2018-09-15T13:47:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="23982" started-at="2018-09-15T13:47:17Z" finished-at="2018-09-15T13:47:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateDealSubmenuOption()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateDealSubmenuOption" duration-ms="710" started-at="2018-09-15T13:47:41Z" finished-at="2018-09-15T13:47:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDealSubmenuOption -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1060" started-at="2018-09-15T13:47:41Z" finished-at="2018-09-15T13:47:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="setUp" is-config="true" duration-ms="27721" started-at="2018-09-15T13:47:42Z" finished-at="2018-09-15T13:48:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateTaskSubmenuOption()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="validateTaskSubmenuOption" duration-ms="683" started-at="2018-09-15T13:48:10Z" finished-at="2018-09-15T13:48:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTaskSubmenuOption -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.tests.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1200" started-at="2018-09-15T13:48:11Z" finished-at="2018-09-15T13:48:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.tests.HomePageTest -->
+      </class> <!-- com.crm.tests.CompanyLookUpPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
