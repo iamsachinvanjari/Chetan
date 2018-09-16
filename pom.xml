@@ -26,12 +26,12 @@
     </dependency>
     
     <dependency>
-  		<groupId>org.testng</groupId>
-  		<artifactId>testng</artifactId>
-  		<version>6.8</version>
-  		<scope>test</scope>
-  		<!-- <scope>compile</scope> -->
-	</dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0-beta1</version>
+   <!--  <scope>test</scope> -->
+</dependency>
+
     
     
     <dependency>
@@ -78,7 +78,7 @@
           <version>2.20.1</version> 
           <configuration>
           <suiteXmlFiles>
-          <SuiteXmlFile>testng.xml</SuiteXmlFile>
+    	      <SuiteXmlFile>testng.xml</SuiteXmlFile>
           </suiteXmlFiles>
           </configuration>
         </plugin>
