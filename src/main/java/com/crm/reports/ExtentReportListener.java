@@ -11,7 +11,7 @@ import com.crm.util.TestUtil;
 public class ExtentReportListener implements ITestListener {
 
 	private static int counter=0;
-	private static ExtentReports extent = ExtentManager.createInstance("Free_CRM_Test_Report_CRC"+counter+++".html");
+	private static ExtentReports extent = ExtentManager.createInstance("Free_CRM_Test_Report_CRC.html");
 	
     public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	
