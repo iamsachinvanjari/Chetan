@@ -46,7 +46,7 @@ public class SendMailSSLWithAttachment {
 
 					protected PasswordAuthentication getPasswordAuthentication() {
 
-					return new PasswordAuthentication("cccchopade23@gmail.com", "8600272106");
+					return new PasswordAuthentication("funtoosh7035@gmail.com", "Fun@7035");
 
 					}
 
@@ -58,10 +58,10 @@ public class SendMailSSLWithAttachment {
 			Message message = new MimeMessage(session);
 
 			// Set the from address
-			message.setFrom(new InternetAddress("cccchopade23@gmail.com"));
+			message.setFrom(new InternetAddress("funtoosh7035@gmail.com"));
 
 			// Set the recipient address
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sagarpatilgovinda@gmail.com"));
+			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("iamsachin.vanjari@gmail.com"));
             
                         // Add the subject link
 			message.setSubject("Testing Subject");
@@ -76,7 +76,7 @@ public class SendMailSSLWithAttachment {
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
 			// Mention the file which you want to send
-			String filename = "C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\Test_extent.html";
+			String filename = "/home/sachin/Downloads/Selenium/FinalVersionFramework-master/Test_extent1.html";
 
 			// Create data source and pass the filename
 			DataSource source = new FileDataSource(filename);
