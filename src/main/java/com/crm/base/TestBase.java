@@ -16,11 +16,11 @@ public class TestBase {
 	
 	public TestBase() {
 		prop = new Properties();
-		String path ="C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\config\\config.properties";
+		String path ="/home/sachin/Downloads/Selenium/FinalVersionFramework-master/src/main/java/com/crm/config/config.properties";
 		prop = new Properties();
 		FileInputStream ip;
 		try {
-			ip = new FileInputStream("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\config\\config.properties");
+			ip = new FileInputStream("/home/sachin/Downloads/Selenium/FinalVersionFramework-master/src/main/java/com/crm/config/config.properties");
 			
 			prop.load(ip);
 		} catch (IOException e) {
@@ -49,7 +49,7 @@ public static void initilization()
 	
 	ExtentTest test = extent.createTest("MyFirstTest");
 */	
-	System.setProperty("webdriver.chrome.driver", "E:\\Selenium Material\\chromedriver_win32 (2)\\chromedriver.exe");
+	System.setProperty("geckodriver", "/home/sachin/Downloads/Selenium/geckodriver");
 	driver= new ChromeDriver();
 	/*	test.log(LogStatus.PASS,"Google Chrome browser launched successfully");
 //	*///}
