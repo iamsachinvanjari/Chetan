@@ -50,7 +50,7 @@ public static void initilization()
 	ExtentTest test = extent.createTest("MyFirstTest");
 */	
 	System.setProperty("geckodriver", "/home/sachin/Downloads/Selenium/geckodriver");
-	driver= new ChromeDriver();
+	driver= new FirefoxDriver();
 	/*	test.log(LogStatus.PASS,"Google Chrome browser launched successfully");
 //	*///}
 	driver.get("https://www.freecrm.com/index.html");
