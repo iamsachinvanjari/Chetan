@@ -27,7 +27,7 @@ public class TestUtil extends TestBase{
 	static Workbook book;
 	static Sheet sheet;
 	static int no;
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\src\\main\\java\\com\\crm\\data\\newConatct.xlsx";
+	public static String TESTDATA_SHEET_PATH = "/home/sachin/Downloads/Selenium/FinalVersionFramework-master/src/main/java/com/crm/data/newConatct.xlsx";
 	//For switching to frame
 	public  void movetoFrame()
 	{
@@ -65,7 +65,7 @@ public class TestUtil extends TestBase{
 	{
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 try {
-			Files.copy(screenshotFile, new File("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\Screen-Shots\\SoftwareTestingMaterial"+no+".png"));
+			Files.copy(screenshotFile, new File("/home/sachin/Downloads/Selenium/FinalVersionFramework-master/Screen-Shots/SoftwareTestingMaterial"+no+".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -76,7 +76,7 @@ public class TestUtil extends TestBase{
 	public static File getsanp()
 	{
 		File tempSnap = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File FileDest = new File("C:\\Users\\CRC\\eclipse-workspace\\freeCRM\\Screen-Shots\\SoftwareTestingMaterial"+no+++".png");
+		File FileDest = new File("/home/sachin/Downloads/Selenium/FinalVersionFramework-master/Screen-Shots/SoftwareTestingMaterial"+no+++".png");
 		
 		try {
 			Files.move(tempSnap, FileDest);
