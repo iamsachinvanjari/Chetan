@@ -90,7 +90,6 @@
         <configuration>
 		
 
-<configuration> <forkMode>never</forkMode> </Configuration>
           <classpathDependencyScopeExclude>runtime</classpathDependencyScopeExclude>
 		  <classpathDependencyExcludes>org.apache.commons:commons-email</classpathDependencyExcludes>
         </configuration>
