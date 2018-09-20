@@ -55,6 +55,17 @@
     	<artifactId>javax.mail-api</artifactId>
     	<version>1.5.5</version>
 	</dependency>
+	  
+	  <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>a</artifactId>
+        <version>1.13</version>
+    </dependency>
+    <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>b</artifactId>
+        <version>1.6</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -77,6 +88,9 @@
           <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.0</version>
         <configuration>
+		
+
+<configuration> <forkMode>never</forkMode> </Configuration>
           <classpathDependencyScopeExclude>runtime</classpathDependencyScopeExclude>
 		  <classpathDependencyExcludes>org.apache.commons:commons-email</classpathDependencyExcludes>
         </configuration>
